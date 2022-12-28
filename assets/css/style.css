@@ -1,0 +1,12 @@
+* {
+    background-color: var(--dominantColor);
+}
+
+:root {
+    --dominantColor: rgb(21, 1, 28);
+}
+
+.nav-item.active.motto {
+    color: aliceblue;
+    font-weight: bolder;
+}
