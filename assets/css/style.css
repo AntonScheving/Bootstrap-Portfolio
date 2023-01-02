@@ -1,24 +1,13 @@
 :root {
     --primaryColor: linear-gradient(90deg, rgb(4, 3, 5), rgb(23, 24, 28));
-    --secondaryColor: rgb(26, 50, 235);
-    --fontsColor: rgb(246, 238, 238);
+    --secondaryColor: rgb(27, 28, 54);
+    --fontsColor: rgb(205, 202, 226);
 }
-
-/* * {
-    background-color: transparent;
-} */
-
-.backgroundColor {
-    background-image: var(--primaryColor);
-}
-
-.nav-item.active.motto {
-    color: var(--fontsColor);
-    font-weight: bolder;
-}
-
-#work:hover {
-    text-size: 15%;
+/* 
+removes the smooth scrolling and white space at the top and bottom of page 
+*/
+body {
+    overscroll-behavior-y: none;
 }
 
 .heroBanner {
@@ -27,45 +16,56 @@
     margin-bottom: 0;
 }
 
-/* .margin45 {
-    margin-left: 45px;
-    margin-right: 45px;
+/* Sets the shadow under nav links on hover */
+.buttonShadow:hover {
+    text-shadow: 0 8px 12px rgba(231, 229, 229);
 }
- */
-
-.imgSize {
-    max-width: 75%;
-}
-/* Work section */
-.colorFonts, h2 {
-    color: var(--fontsColor)
+/* Sets the background on the body */
+.backgroundColor {
+    background-image: var(--primaryColor);
 }
 
 .navLinks {
     font-size: larger;
 }
 
-.buttonShadow:hover {
-    text-shadow: 0 8px 12px rgba(231, 229, 229);
-  }
-  
+h1 span {
+    font-size: 75px;
+    font-weight: 500;
+}
 
-.cardColor {
-background-color: rgb(23, 24, 28);
+.imgSize {
+    max-width: 75%;
+}
+
+/* Work section */
+h2 span {
+    font-size: 75px;
+}
+
+.workMargin {
+    margin-bottom: 25px;
+}
+
+.insideCard {
+    background-color: var(--secondaryColor);
 }
 
 .cardStyles {
     margin-bottom: 45px;
-    /* background-color: var(--secondaryColor); */
 }
-.insideCard {
-    background-color: var(--secondaryColor);
+
+.colorFonts, h2 {
+    color: var(--fontsColor);
 }
+
+/* about / contact me section */
 
 .linkSize {
     font-size: 40px; 
 }
 
+/* footer section */
 .footer {
     font-size: 20px; 
    border-style: solid;
@@ -78,7 +78,11 @@ background-color: rgb(23, 24, 28);
    border-bottom-width: 0px;
 }
 
-#bookACall:hover, #linkedin:hover, #github:hover, #youtube:hover, #card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover {
+.boxShadow:hover {
+    box-shadow: 0 1px 11px 1px var(--fontsColor);
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover {
     opacity: .8;
-    color: var(--primaryColor)
+    color: var(--primaryColor);
 }
