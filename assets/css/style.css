@@ -10,17 +10,9 @@ body {
     overscroll-behavior-y: none;
 }
 
-.heroBanner {
-    background-image: var(--primaryColor);
-    color: var(--fontsColor);
-    margin-bottom: 0;
-}
-
-/* Sets the shadow under nav links on hover */
-.buttonShadow:hover {
-    text-shadow: 0 8px 12px rgba(231, 229, 229);
-}
-/* Sets the background on the body */
+/* 
+Sets the background on the body. background has to be an image because it is a gradient color
+*/
 .backgroundColor {
     background-image: var(--primaryColor);
 }
@@ -29,11 +21,25 @@ body {
     font-size: larger;
 }
 
+/* Sets the shadow under nav links on hover */
+.buttonShadow:hover {
+    text-shadow: 0 8px 12px rgba(231, 229, 229);
+}
+
+/* Styles the hero section */
+.heroBanner {
+    background-image: var(--primaryColor);
+    color: var(--fontsColor);
+    margin-bottom: 0;
+}
+
+/* styles the h1 title */
 h1 span {
     font-size: 75px;
     font-weight: 500;
 }
 
+/* styles the profile image */
 .imgSize {
     max-width: 75%;
 }
@@ -43,24 +49,32 @@ h2 span {
     font-size: 75px;
 }
 
+/* Styles each project card on hover */
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover {
+    color: var(--primaryColor);opacity: .8;
+}
+
+/* Adds a bottom margin to the Work title */
 .workMargin {
     margin-bottom: 25px;
 }
 
+/* Styles the background colour of all the cards and elements */
 .insideCard {
     background-color: var(--secondaryColor);
 }
 
+/* Adds a bottom margin  to the cards */
 .cardStyles {
     margin-bottom: 45px;
 }
 
+/* Sets the font colour */
 .colorFonts, h2 {
     color: var(--fontsColor);
 }
 
-/* about / contact me section */
-
+/* About / contact me section */
 .linkSize {
     font-size: 40px; 
 }
@@ -68,21 +82,17 @@ h2 span {
 /* footer section */
 .footer {
     font-size: 20px; 
-   border-style: solid;
-   /* border-top: 20px; */
-   border-top-width: 2px;
-   border-color: var(--secondaryColor);
-   padding-top: 25px;
-   border-left-width: 0px;
-   border-right-width: 0px;
-   border-bottom-width: 0px;
+    border-style: solid;
+    /* border-top: 20px; */
+    border-top-width: 2px;
+    border-color: var(--secondaryColor);
+    padding-top: 25px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
 }
 
+/* Adds a shadow to the buttons in the footer */
 .boxShadow:hover {
     box-shadow: 0 1px 11px 1px var(--fontsColor);
-}
-
-#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover {
-    opacity: .8;
-    color: var(--primaryColor);
 }
